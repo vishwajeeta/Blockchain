@@ -1,0 +1,2 @@
+//Deploying to the 'live' network. 'live' means 'Mainnet' or 'Testnet'
+//(deploy and run) Environment => (javaScript VM to) injected Web3  || web3 provider if we want to use our own blockchain node or web3 provider    //taking metamask and injucting it into the sourcecode of the browser
