@@ -1,0 +1,53 @@
+mkdir crowdfunding
+cd crowdfunding
+mkdir client
+----------------------------------------smart contract[ backend ]------------------------------------------------------
+npx thirdweb@latest create --contract
+    name> web3
+    hardhat
+    smart contract > Crowdfunding
+    >Empty Contract
+cd web3
+web3/contracts/CrowdFunding.sol #its in the video
+
+//install metamask =()=> GoerliETH => goerlifaucet.com
+metamask =()=> private_key
+
+web3/.env #create .env file
+PRIVATE_KEY=dfca2ee...................fcc
+web3/.gitignore
+.env
+
+web3/hardhat.config.js
+//in chrome => goerli rpc or 
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  solidity: {
+    version:"0.8.19",
+    defaultNetwork:'goerli',
+    networks:{
+        hardhat:{},
+        goerli:{
+            url:'https://rpc.ankr.com/eth_goerli',
+            account:['0x${process.env.PRIVATE_KEY}']
+        }
+    },
+    settings:{
+        optimizer:{
+            enabled:true,
+            runs:200,
+        },
+    },
+    },
+};
+
+//deploy into thirdweb
+>npm run deploy
+//you will get a link to thirdweb
+/*
+thirdweb=chrome(thirdweb)=>connectWallet=>[check] add to dashboard =>deploy now[two notification will apperar]
+
+--------------------------client[frontend]---------------------------------------------------------------------------
+>cd client
+\client>npx thirdweb create --app #34 min
