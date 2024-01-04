@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metamask</title>
+</head>
+<body>
+    
+    <button onclick="connect()" id="ethereum">connect</button>
+</body>
+<script>
+    connect = async()=>{
+    //check if the metamask or ethereum object is available?
+    if( typeof window.ethereum !== "undefined" && window.ethereum.isMetaMask)
+
+    {
+       await window.ethereum.request({method:"eth_requestAccounts"})
+        document.getElementById("ethereum").innerText="connected"
+    } else {
+        alert("please install metamask")
+    }
+ 
+}
+</script>
+</html>
