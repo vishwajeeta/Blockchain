@@ -1,0 +1,15 @@
+1.memory :-memory and calldata have some similarity.both are used to store data temparaly
+//memory variable can be changed
+//struct,mapping,array eg:- string is a array of bites
+function addPersion(string memory _name)public{
+    _name="cat"; //no error will occur
+}
+
+2.calldata:- is temparaly variable that cannot be modified
+function addPersion(string memory _name)public{
+    _name="cat"; //error will occur "literal can't be converted to string"
+}
+
+3.storage:- storage is permanent variable that can be modified
+//outside of the function
+uint256 myName;//it is implisitly converted to a storage variable
