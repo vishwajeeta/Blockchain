@@ -1,0 +1,16 @@
+SC create Trust Minimized Agreements (unbreakable promises)
+speed,efficiency,transprency...etc...
+1.Decentralized (many node operators run blockchains)
+2.Transparency & flexibility
+3.speed & efficiency
+4.Security & immutability
+5.counterparty Risk Removal
+6.Trust minimized agreements
+Note:- blockchain is sudo-anonomus (you aren't tied to a identity)
+
+To get access to blockchain we have to take half-of-nodes eg:-51% Attack
+unless even 1 node has a copy of blockchain your data is safe
+
+hacking a blockchain is nearly impossible
+
+private_key="Your Password"

@@ -1,0 +1,38 @@
+bitcoin was one of the first protocol to use this revosionary technology called blockchain.
+bitcoin white paper was created by sudo-anonomus satosi nakamoto
+
+bitcoin network was powered by 
+cryptography
+decentralized
+& allow people to engage in sensership resistence finance in a decentralized manner
+
+people also look to it like:- superial Digital store of value. eg:-gold
+
+after few years 
+a man vatalic butralen  used same blockchain as infrastructure with additional features
+
+
+etherium
+decentralized transaction,agriments,org
+
+Smart contracts are the set of instructions executed in a decentralized way without the need for a centralized or third party intermediary
+
+smart contract is similar to traditional agriments 
+    set of instructions between parties
+    removes centralized forces and counterparty risk
+
+bitcoin has smart-contract ,but very less functionality
+    btc is intentionally "turning incomplete"
+
+btc=store of value
+eth=btc+smart contract "decentralized agriments"
+
+blockchain can't interact with realworld "oracle problem"
+
+web3=website+smartContract(transactions)+eth
+{
+    The permissionless web,with dynamic content.
+    where decentralized consorship resistant networks run your agreement and code.
+    it generally is accompanied by the idea of user owned ecosystems,
+    where the protocols you interact with you also own a portion of instead of solely being the product.
+}

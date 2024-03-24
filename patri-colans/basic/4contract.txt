@@ -1,0 +1,6 @@
+just like wallet even contract can hold funds
+we can access value "amount we have assigen to send" using
+msg.value  //number of Wei send with message
+
+Note:-
+require(msg.value > 1e18,"didn't sent minimum required ETH");//1e18 = 1ETH = 1000000000000000000 = 1 * 10 ** 18  //** means power/exponent
