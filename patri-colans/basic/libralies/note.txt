@@ -1,0 +1,3 @@
+1.libraries are similar to contracts, but u can't ceclare any starte variables and can't send ether.
+2.A library is embedded into the contract of all library funcation are internal.
+or-else the library "contract" must be deployed and then linked with it before the "main" contract is deployed.

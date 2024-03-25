@@ -1,3 +1,7 @@
+
+Note:-msg.value is uint256
+
+
 SC create Trust Minimized Agreements (unbreakable promises)
 speed,efficiency,transprency...etc...
 1.Decentralized (many node operators run blockchains)

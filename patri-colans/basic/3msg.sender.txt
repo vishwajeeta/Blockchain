@@ -1,0 +1,19 @@
+//store the list of address who sent the transactions
+
+address[] public funders;
+function fund()public payable{
+funders.push(msg.sender);
+}
+
+
+//Note:-new in solidity named types
+
+address[] public funders;
+mapping(address funder =>uint256) public addressToAmountFunder;
+function fund()public payable{
+funders.push(msg.sender);
+
+//msg.sender address + previously funded
+//in short how much they have spent
+addressToAmountFunder[msg.sender] = addressToAmountFunder[msg.sender]+msg.value;
+}

@@ -1,0 +1,40 @@
+//SPDX-License-Identifier:MIT
+
+interface AggregatorV3Interface{
+
+function latestRoundData()external view 
+returns(
+uint80 roundId,
+uint256 answer,
+uint256 startedAt,
+uint256 updatedAt,
+uint80 answeredInRound
+);
+}
+
+
+
+-------------------------------external file-----------------------------------------
+
+//SPDX-License-Identifier:MIT
+pragma solidity ^0.8.18;
+//importing from github/npm
+import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interface/AggregatorV3Interface.sol";
+
+contract FundMe{
+
+function getPrice()public view returns(uint256){
+
+//Address 0x840938459738457jkke897538459834
+//ABI
+AggregatorV3Interface priceFeed = AggregatorV3Interface(0x840938459738457jkke897538459834)
+
+//To return miltiple hipes we use this syntax  video=04:48:40
+(,int256 price,,,)=priceFeed.latestRoundData();//price of ETH To USD
+
+//type casting some like int->uint256
+return uint256(price *1e10);//add 10-decimal places
+}
+
+
+Note:-msg.value is uint256
