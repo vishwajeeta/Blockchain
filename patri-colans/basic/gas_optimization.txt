@@ -1,0 +1,16 @@
+there are few low level code in solidity which can help in gas optimization
+
+Note:- these keywords should only be used for immutable  variables
+
+1.constant
+2.immutable
+
+code:-
+
+uint256 public constant MINIMUM_USD= 50 * 1e18;
+//21,415 gas  - constant  =   $9.058545
+//23,515 gas - non-constant = $9.946845
+
+address public immutable i_owner;
+//21,508 gas - immutable
+//23,644 gas - non-immutable
