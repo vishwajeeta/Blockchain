@@ -1,0 +1,22 @@
+//SPDX-Licence-Identifier:MIT
+pragma solidity ^0.8.0;
+
+//custom error
+error NotOwner();
+
+contract Vishwa{
+address public owner;
+
+constructor(){
+owner=msg.sender;
+}
+
+modifier onlyOwner{
+//require(msg.sender == owner,"you are Not owner!");
+//--;
+
+if(msg.sender != owner){revert NotOwner();}
+
+}
+
+}
