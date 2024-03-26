@@ -10,7 +10,7 @@ Three different ways for withdrawal are:-
 //get the balance of our contract (this) refers to the whole contract. native blockchain currency balance
 //typecast msg.sender from address type to payable
 //msg.sender = address
-//payble(msg.sender) = payable address
+//payable(msg.sender) = payable address
 
 payable(msg.sender).transfer(address(this).balance);
 
