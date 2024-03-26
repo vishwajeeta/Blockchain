@@ -1,0 +1,6 @@
+address[] public MyArray;
+
+function emptyArray()public{
+//reseting the array
+MyArray = new address[](0);
+}
