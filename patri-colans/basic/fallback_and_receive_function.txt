@@ -1,0 +1,20 @@
+//SPDX-Licence-Identifier:MIT
+pragma solidity ^0.8.7;
+
+//receive() will execute if any transaction is performed
+//fallback() will execute if any unknown function is called
+
+
+//fund is a function which will accept amount
+contract Vishwa{
+//if we do any transaction without calling the function by mistake
+receive() external payable{
+fund();
+}
+
+
+//if we done transaction by calling any wrong function
+fallback() external payable{
+fund();
+}
+}
