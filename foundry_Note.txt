@@ -52,3 +52,15 @@ $ forge compile
 
 foundry comes build in with the virtual env in the shell which is 'anvil'
 $ anvil
+
+--------------deploy smart contract------------------------
+$ forge create SimpleStorage --interactive
+it will by default deploy to anvil.
+
+*private key
+
+To change RPC url to genash 
+$ forge create SimpleStorage --rpc-url http://127.0.0.1:7545 --interactive
+
+*we would be needed rpc address
+*private key
