@@ -1,0 +1,14 @@
+i am facing this error while compiling
+'''
+error:syntax not found
+'''
+
+here is the code:
+
+'''solidity
+contract vishwa{
+//the code
+}
+'''
+
+can someone help me figure-out what the issue is?
