@@ -38,5 +38,17 @@ Note:-if already have any file yet want to intialize foundry forge init --force 
 Foundry comes with 4 components:-
 1.forge
 2.cast
-3.anvil
+3.anvil #local blockchain/test net
 4.chisel
+
+
+To compile our come
+$ forge compile
+
+
+-----------deploy To local blockchain --------------------
+1.anvil
+2.genash
+
+foundry comes build in with the virtual env in the shell which is 'anvil'
+$ anvil
