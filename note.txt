@@ -1,0 +1,21 @@
+How To use foundry in Windows?
+
+step1 : we can use Git BASH or WSL   as foundry doesn't support cmd or powershell
+------- To install WSL [window 11] cmd/> wsl --install 
+------- give admin permission
+------- Re-boot
+
+------- To install Git shell => by installing git it will be installed by default
+
+------- vsCode install Remote Development automatically install compatibility to connect WSL with vsCode
+		OR
+------- mkdir <file_name> && cd <file_name> && code . 
+Note:-it will automatically install WSL in vsCode
+
+
+step2 : curl -L https://foundry.paradigm.xyz | bash
+
+step3 : forge init <project_name>
+
+* foundry is the fastest smart contract development framework
+* it's the framework of choice for smart-contract security enginears and auditors
