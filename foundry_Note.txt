@@ -15,7 +15,28 @@ Note:-it will automatically install WSL in vsCode
 
 step2 : curl -L https://foundry.paradigm.xyz | bash
 
-step3 : forge init <project_name>
+step3 : source /Users/patrick/.bashrc
+step4 : foundryup
+step5 : forge --version
+
+step6 : if after closing terminal forge --version 'show error'
+	echo "source /Users/patrick/.bashrc" >> .bash_profile
+	view .bash_profile
+	vim .bash_profile
+
+step7 : forge init <project_name>
+	 (OR)
+	mkdir <project_name> && cd <project_name>
+	forge init
+
+
+Note:-if already have any file yet want to intialize foundry forge init --force .
 
 * foundry is the fastest smart contract development framework
 * it's the framework of choice for smart-contract security enginears and auditors
+
+Foundry comes with 4 components:-
+1.forge
+2.cast
+3.anvil
+4.chisel
