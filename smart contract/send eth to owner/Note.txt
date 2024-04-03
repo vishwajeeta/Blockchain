@@ -1,0 +1,16 @@
+when we interact with another smart contract
+eg:-
+contract_A
+
+msg.sender
+
+//if  msg.sender  is called from any other smart contract it will use address of that contract neither than address of the sender.
+//So we have to use another method tx.origin which will get the address of the account who sent the initial transaction
+
+tx.origin
+
+
+
+contract_B
+
+calling contract_A
