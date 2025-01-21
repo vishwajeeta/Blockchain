@@ -7,4 +7,7 @@ contract BoxV1 {
     function getNumber() external view returns(uint256){
         return number;
     }
+    function version()external view returns(uint256){
+        return 1;
+    }
 }
