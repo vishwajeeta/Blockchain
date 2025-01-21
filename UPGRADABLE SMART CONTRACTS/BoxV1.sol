@@ -2,5 +2,9 @@
 pragma solidity ^0.8.18;
 
 contract BoxV1 {
-    
+    uint256 internal number;
+
+    function getNumber() external view returns(uint256){
+        return number;
+    }
 }
