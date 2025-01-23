@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-contract BoxV1 {
+contract BoxV2 {
     uint256 internal number;
 
     function setNumber(uint256 _number)external{}
