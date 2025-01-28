@@ -5,6 +5,13 @@ import {UUPSUpgradeable} from "@OpenZeppelin/contracts-upgradeable/proxy/utils/U
 import {Initializable} from "@OpenZeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 // this is used to do proxy upgradeable works
+
+// storage is stored in the proxy, NOT the implementation
+
+// proxy (borrowing funcs) -> implementation
+// proxy -> deploy implementaion -> call some "initializer" function.
+// initializer can be consider as a type of constructor()
+
 contract BoxV1 is UUPSUpgradeable {
     uint256 internal number;
 
