@@ -15,6 +15,10 @@ import {Initializable} from "@OpenZeppelin/contracts-upgradeable/proxy/utils/Ini
 contract BoxV1 is UUPSUpgradeable {
     uint256 internal number;
 
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor(){
+        _disableInitializers();//dont let any initialization happen
+    }
     function setNumber(uint256 _number)external{}
     function getNumber() external view returns(uint256){
         return number;
@@ -25,3 +29,4 @@ contract BoxV1 is UUPSUpgradeable {
     //anybody can upgrade this
     function _authorizeUpgrade(address newImplementation) internal override {        }
 }
+//Date 2025-01-28 [video->2(05:40)]
