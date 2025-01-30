@@ -29,4 +29,4 @@ contract BoxV1 is UUPSUpgradeable {
     //anybody can upgrade this
     function _authorizeUpgrade(address newImplementation) internal override {        }
 }
-//Date 2025-01-28 [video->2(05:40)]
+//Date 2025-01-29 [video->2(05:40)]
